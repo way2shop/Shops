@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595968169351",
+    "project_id": "way2shop-ecde2",
+    "storage_bucket": "way2shop-ecde2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595968169351:android:d34f8a8651cdf7d76a2f22",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmSEwZQEqPTCWAloJ1OWBGLtwgk_44OqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

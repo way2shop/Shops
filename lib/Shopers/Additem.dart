@@ -9,7 +9,8 @@ class Additem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar( backgroundColor:Color(0xFF10706A),leading:InkWell(
+      appBar: AppBar( backgroundColor:Color(0xFF10706A),
+        /*leading:InkWell(
         onTap: (){},
 
         child: Container(
@@ -17,7 +18,7 @@ class Additem extends StatelessWidget {
             width:15,
             child: Image.asset("lib/icons/img_1.png")),
 
-      ),
+      ),*/
       ),
       body:
       Container(
