@@ -7,7 +7,8 @@ import 'package:untitled/customer/Cshops.dart';
 
 
 import 'Admin/AdmnHome.dart';
-import 'Admin/ShopsAdd.dart';
+import 'Admin/ViewShops.dart';
+import 'Admin/ViewUsers.dart';
 import 'Shopers/ShopHome.dart';
 import 'customer/Ctrending.dart';
 import 'customer/Custhome.dart';
@@ -44,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Stockdt()
+      home: Custhome()
 
     );
   }

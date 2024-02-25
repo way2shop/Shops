@@ -103,7 +103,15 @@ SizedBox(height: 30,),
             ),
             Padding(
               padding: const EdgeInsets.all(15),
-              child: Text("For You",style: TextStyle(fontSize: 20),),
+              child:  Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                children: [
+                  Text("For You",style: TextStyle(fontSize: 20),),
+                  Text("View All",style: TextStyle(fontSize: 18)),
+                ],
+
+              ),//Text("For You",style: TextStyle(fontSize: 20),),
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,

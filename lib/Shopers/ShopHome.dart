@@ -63,13 +63,22 @@ Container(
                     builder: (context) => const Stockdt()),
               );
               },
-              child: HomeButton(textColor: Colors.white,
-                backgroundColor: Color(0xff0066B65),
-                boxshadowColor: Color(0x3F000000) ,
-                borderColor: Color(0xff0066B65) ,
-                text: "Stock details",
-                hight:61 ,
-                width:147, fondSize: 18 ,),
+              child: InkWell(
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Stockdt()),
+                  );
+                },
+                child: HomeButton(textColor: Colors.white,
+                  backgroundColor: Color(0xff0066B65),
+                  boxshadowColor: Color(0x3F000000) ,
+                  borderColor: Color(0xff0066B65) ,
+                  text: "Stock details",
+                  hight:61 ,
+                  width:147, fondSize: 18 ,),
+              ),
             ),
             HomeButton(textColor: Colors.white,
               backgroundColor: Color(0xff0066B65),
@@ -163,106 +172,108 @@ Container(
           ),
         ),
         SizedBox(height: 24,),
-        Container(
-          width: double.infinity,
-          height: 510,
-          decoration: ShapeDecoration(
-            color: Color(0xFFDBE3E3),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(25),
-                topRight: Radius.circular(25),
+        SingleChildScrollView(
+          child: Container(
+            width: double.infinity,
+            height: 510,
+            decoration: ShapeDecoration(
+              color: Color(0xFFDBE3E3),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(25),
+                  topRight: Radius.circular(25),
+                ),
               ),
             ),
-          ),
-          child: Column(
-            children: [
-              Text(
-                'Order Placed',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w400,
-                  height: 0,
+            child: Column(
+              children: [
+                Text(
+                  'Order Placed',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
                 ),
-              ),
-              SizedBox(height: 10,),
-              Container(
-                child: SingleChildScrollView(
-                child: Column(children: [Lists(
-                  width: double.infinity,
-                  hight: 66,
-                  custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                ),
-                  SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),SizedBox(height: 1,),
-                  Lists(
+                SizedBox(height: 10,),
+                Container(
+                  child: SingleChildScrollView(
+                  child: Column(children: [Lists(
                     width: double.infinity,
                     hight: 66,
                     custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
 
                   ),
-                  SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+                    SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
 
+                    ),SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),
+                    SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),
+                    SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),
+                    SizedBox(height: 1,),
+                    Lists(
+                      width: double.infinity,
+                      hight: 66,
+                      custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
+
+                    ),],),
                   ),
-                  SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),
-                  SizedBox(height: 1,),
-                  Lists(
-                    width: double.infinity,
-                    hight: 66,
-                    custNm: 'anees', custPh: '8923541289', itemName: 'Red bag ', itemPrice: '680',
-
-                  ),],),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
 

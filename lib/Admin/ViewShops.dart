@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/Admin/AdmnHome.dart';
 import 'package:untitled/widgets/HomeButton.dart';
 
-class ShopsAdd extends StatelessWidget {
-  const ShopsAdd({super.key});
+class ViewShops extends StatelessWidget {
+  const ViewShops({super.key});
 
   @override
   Widget build(BuildContext context) {

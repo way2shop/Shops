@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/Admin/ViewShops.dart';
+import 'package:untitled/Admin/ViewUsers.dart';
 
 import '../widgets/HomeButton.dart';
 
@@ -49,29 +51,56 @@ class AdmnHome extends StatelessWidget {
           ),
         ),
             SizedBox(height: 70,),
-            HomeButton(textColor: Colors.white,
-              backgroundColor: Color(0xff0066B65),
-              boxshadowColor: Color(0x3F000000) ,
-              borderColor: Color(0xff0066B65) ,
-              text: "Shops",
-              hight:65,
-              width:230, fondSize: 20,),
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ViewShops()),
+                );
+              },
+              child: HomeButton(textColor: Colors.white,
+                backgroundColor: Color(0xff0066B65),
+                boxshadowColor: Color(0x3F000000) ,
+                borderColor: Color(0xff0066B65) ,
+                text: "Shops",
+                hight:65,
+                width:230, fondSize: 20,),
+            ),
             SizedBox(height: 30 ,),
-            HomeButton(textColor: Colors.white,
-              backgroundColor: Color(0xff0066B65),
-              boxshadowColor: Color(0x3F000000) ,
-              borderColor: Color(0xff0066B65) ,
-              text: "Users",
-              hight:65,
-              width:230, fondSize: 20,),
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ViewUsers()),
+                );
+              },
+              child: HomeButton(textColor: Colors.white,
+                backgroundColor: Color(0xff0066B65),
+                boxshadowColor: Color(0x3F000000) ,
+                borderColor: Color(0xff0066B65) ,
+                text: "Users",
+                hight:65,
+                width:230, fondSize: 20,),
+            ),
             SizedBox(height: 30 ,),
-            HomeButton(textColor: Colors.white,
-              backgroundColor: Color(0xff0066B65),
-              boxshadowColor: Color(0x3F000000) ,
-              borderColor: Color(0xff0066B65) ,
-              text: "Category",
-              hight:65,
-              width:230, fondSize: 20,),
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ViewUsers()),
+                );
+              },
+              child: HomeButton(textColor: Colors.white,
+                backgroundColor: Color(0xff0066B65),
+                boxshadowColor: Color(0x3F000000) ,
+                borderColor: Color(0xff0066B65) ,
+                text: "Category",
+                hight:65,
+                width:230, fondSize: 20,),
+            ),
         ],
         ),
 

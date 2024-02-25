@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/Shopers/Additem.dart';
 import 'package:untitled/Shopers/ShopHome.dart';
 import 'package:untitled/widgets/Lists.dart';
 
@@ -522,7 +523,25 @@ class Stockdt extends StatelessWidget {
       ),
     ),
 
-//bottomNavigationBar: BottomNavigationBar(items: []),
+bottomNavigationBar:
+    Container(
+      height: 50,
+      decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),),
+      child: MaterialButton(onPressed: (){ Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => const Additem()),
+      );
+
+      },
+        child: const Text("Add New"),
+        highlightColor: Color(0xff0C630A),
+        splashColor: Colors.grey,
+        color: Colors.green,
+      ),
+    )
+
     );
   }
 }

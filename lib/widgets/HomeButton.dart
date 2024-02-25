@@ -28,44 +28,41 @@ class HomeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: (){},
-      child: Container(
-        width: width,
-        height: hight,
-        decoration: BoxDecoration(
-          color: backgroundColor,
-          borderRadius: BorderRadius.circular(15),
-          border: Border(
-            left: BorderSide(color:borderColor),
-            top: BorderSide(color:borderColor),
-            right: BorderSide(color:borderColor),
-            bottom: BorderSide(width: 1.20, color: borderColor),
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: boxshadowColor,
-              blurRadius: 4,
-              offset: Offset(0, 4),
-              spreadRadius: 0,
-            )
-          ],
+    return Container(
+      width: width,
+      height: hight,
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(15),
+        border: Border(
+          left: BorderSide(color:borderColor),
+          top: BorderSide(color:borderColor),
+          right: BorderSide(color:borderColor),
+          bottom: BorderSide(width: 1.20, color: borderColor),
         ),
-          child: Center(
-            child: Text(text,
-              style: TextStyle(
-                color: textColor,
-                fontSize: fondSize,
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.w400,
-                height: 0,
-              ),
-            ),
-          ) ,
-
-
-
+        boxShadow: [
+          BoxShadow(
+            color: boxshadowColor,
+            blurRadius: 4,
+            offset: Offset(0, 4),
+            spreadRadius: 0,
+          )
+        ],
       ),
+        child: Center(
+          child: Text(text,
+            style: TextStyle(
+              color: textColor,
+              fontSize: fondSize,
+              fontFamily: 'Inter',
+              fontWeight: FontWeight.w400,
+              height: 0,
+            ),
+          ),
+        ) ,
+
+
+
     );
 
   }
