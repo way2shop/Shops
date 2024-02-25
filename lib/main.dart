@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/Shopers/Additem.dart';
 import 'package:untitled/Shopers/Stockdt.dart';
@@ -14,7 +15,9 @@ import 'customer/Ctrending.dart';
 import 'customer/Custhome.dart';
 
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -45,7 +48,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Stockdt()
+      home: ShopHome()
 
     );
   }
