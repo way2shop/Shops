@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1073001544888",
+    "project_id": "way3shop",
+    "storage_bucket": "way3shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073001544888:android:8dc8ea8d6411633f85c84d",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-xzE40dOuqTbTghwBQAju-6-bw121Vfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
