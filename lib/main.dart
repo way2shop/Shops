@@ -3,6 +3,7 @@ import 'package:untitled/Shopers/Additem.dart';
 import 'package:untitled/Shopers/Stockdt.dart';
 import 'package:untitled/customer/Caccount.dart';
 import 'package:untitled/customer/Ccategory.dart';
+import 'package:untitled/customer/Clogin.dart';
 import 'package:untitled/customer/Cshops.dart';
 
 
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Stockdt()
+      home: Clogin()
 
     );
   }
