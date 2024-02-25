@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/Shopers/Stockdt.dart';
 import 'package:untitled/widgets/HomeButton.dart';
 import 'package:untitled/widgets/Lists.dart';
 class ShopHome extends StatelessWidget {
@@ -55,13 +56,21 @@ Container(
           children: [
             SizedBox(width:12 ,),
 
-            HomeButton(textColor: Colors.white,
-              backgroundColor: Color(0xff0066B65),
-              boxshadowColor: Color(0x3F000000) ,
-              borderColor: Color(0xff0066B65) ,
-              text: "Stock details",
-              hight:61 ,
-              width:147, fondSize: 18 ,),
+            InkWell(
+              onTap: (){ Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const Stockdt()),
+              );
+              },
+              child: HomeButton(textColor: Colors.white,
+                backgroundColor: Color(0xff0066B65),
+                boxshadowColor: Color(0x3F000000) ,
+                borderColor: Color(0xff0066B65) ,
+                text: "Stock details",
+                hight:61 ,
+                width:147, fondSize: 18 ,),
+            ),
             HomeButton(textColor: Colors.white,
               backgroundColor: Color(0xff0066B65),
               boxshadowColor: Color(0x3F000000) ,
